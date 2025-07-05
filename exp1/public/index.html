@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fruit Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Fresh Fruit – Prices & Varieties</h1>
+  <div id="fruitGrid" class="grid"></div>
+
+  <script>
+    async function loadFruits() {
+      try {
+        const res = await fetch('/api/fruits');
+        const fruits = await res.json();
+        const grid = document.getElementById('fruitGrid');
+
+        fruits.forEach(fruit => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${fruit.img}" alt="${fruit.name}">
+            <header>
+              <h2>${fruit.variety}</h2>
+              <span class="price">₹${fruit.price}/kg</span>
+            </header>
+            <p class="name">${fruit.name}</p>
+            <p class="desc">${fruit.description}</p>
+          `;
+          grid.appendChild(card);
+        });
+      } catch (err) {
+        document.body.innerHTML += '<p style="color:red;">Failed to load fruits</p>';
+      }
+    }
+
+    loadFruits();
+  </script>
+</body>
+</html>

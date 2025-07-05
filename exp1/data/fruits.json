@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Apple",
+    "variety": "Royal Gala",
+    "price": 120,
+    "img": "/img/apple.jpg",
+    "description": "Sweet–tart flavour, crisp texture. Great for eating fresh or baking."
+  },
+  {
+    "name": "Banana",
+    "variety": "Robusta",
+    "price": 45,
+    "img": "/img/banana.jpg",
+    "description": "Soft, creamy flesh with a mild sweetness. Perfect snack on-the-go."
+  },
+  {
+    "name": "Mango",
+    "variety": "Alphonso",
+    "price": 160,
+    "img": "/img/mango.jpg",
+    "description": "Often called the ‘king of mangoes’; rich aroma and velvety pulp."
+  },
+  {
+    "name": "Orange",
+    "variety": "Nagpur",
+    "price": 90,
+    "img": "/img/orange.jpg",
+    "description": "Juicy segments, balanced sweetness and citrus zing—great for juice."
+  },
+  {
+    "name": "Grapes",
+    "variety": "Thompson",
+    "price": 140,
+    "img": "/img/grapes.jpg",
+    "description": "Seedless green grapes, firm skin and honey-like flavour."
+  },
+  {
+  "name": "Jackfruit",
+  "variety": "Koozha",
+  "price": 60,
+  "img": "/img/jackfruit.jpg",
+  "description": "Large tropical fruit with a sweet aroma and fibrous yellow bulbs, great for both raw eating and cooking."
+}
+
+]
