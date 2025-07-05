@@ -1,0 +1,12 @@
+<h2>Course Registration</h2>
+<form method="POST" action="/course" class="vstack gap-3">
+  <input name="courseName" class="form-control" placeholder="Course name" required />
+  <input name="department" class="form-control" placeholder="Department" required />
+  <select name="semester" class="form-select" required>
+    <option disabled selected>Semester</option>
+    {{#range 1 4}}
+      <option value="{{this}}">{{this}}</option>
+    {{/range}}
+  </select>
+  <button class="btn btn-success w-25">Submit</button>
+</form>

@@ -1,0 +1,28 @@
+[
+  {
+    "personal": {
+      "name": "Sathish S",
+      "email": "sathishs.24mca@kongu.edu",
+      "phone": "9994977141"
+    },
+    "course": {
+      "courseName": "python",
+      "department": "mca",
+      "semester": "1"
+    },
+    "time": "2025-07-05T08:11:55.986Z"
+  },
+  {
+    "personal": {
+      "name": "Sathish S",
+      "email": "sathishs.24mca@kongu.edu",
+      "phone": "9994977141"
+    },
+    "course": {
+      "courseName": "python",
+      "department": "mca",
+      "semester": "1"
+    },
+    "time": "2025-07-05T08:19:05.430Z"
+  }
+]
