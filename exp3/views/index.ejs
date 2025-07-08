@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Student Records</h1>
+
+    <form action="/add" method="get" style="margin-bottom: 20px;">
+        <button type="submit" class="btn">➕ Add New Student</button>
+    </form>
+
+    <table>
+      <tr>
+    <th>Name</th>
+    <th>Roll No</th>
+    <th>Department</th>
+    <th>Actions</th>
+</tr>
+<% students.forEach(student => { %>
+<tr>
+    <td><%= student.name %></td>
+    <td><%= student.rollno %></td>
+    <td><%= student.department %></td>
+    <td>
+        <form action="/edit/<%= student._id %>" method="get" style="display:inline;">
+            <button type="submit" class="btn edit">✏️ Edit</button>
+        </form>
+        <form action="/delete/<%= student._id %>" method="get" style="display:inline;" onsubmit="return confirm('Delete this student?')">
+            <button type="submit" class="btn delete">🗑️ Delete</button>
+        </form>
+    </td>
+</tr>
+<% }) %>
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Edit Student</h1>
+    <form action="/edit/<%= student._id %>" method="POST">
+        <input type="text" name="name" value="<%= student.name %>" required>
+       <input type="text" name="rollno" value="<%= student.rollno %>" required>
+        <input type="text" name="department" value="<%= student.department %>" required>
+        <button type="submit" class="btn edit">✏️ Update</button>
+    </form>
+    <form action="/" method="get">
+        <button class="btn back">⬅ Back</button>
+    </form>
+</body>
+</html>
